@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css2.css">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.min.css">
+
+</head>
+<body>
+  <h1 class="h1-text">Калькулятор доставки авто из США</h1>
+  
+    
+  <search class='main-search'>
+    <form class="form-calc">
+        <p>Локация покупки</p>
+        <!-- ! Выбор блок1 аукцион copart-->
+      
+        
+        <select id="selectAukcion" >
+            <option value="0">Страна покупки</option>
+
+            <option value="400" selected>США</option>
+            <option value="550">Европа</option>
+            
+        </select>
+<br><br>
+
+        <p>Тип транспорта</p>
+
+        <select id="selectAukcion2" >
+          <option value="0">Выбрать  из  списка</option>
+          <option value="400" selected>Седан</option>
+          <option value="550">Универсал</option>
+          <option value="350">Внедорожник</option>
+          <option value="2">Пикап</option>
+          <option value="2">Бус</option>
+        </select>
+        <br><br>
+            <!-- !блок выбора цена авто -->
+          <label for="">Стоимость лота:</label>
+          <input type="number" id="priceAuto" class="form__input2" value="8000" min="0" title="Введите стоимость лота">
+
+         <br><br>
+        <!--Площадка  -->
+        <p>Площадка</p>
+        <select id="selectAukcion3" class="livesearch">
+            <option value="0" selected>Выбрать  из  списка</option>
+
+           
+            <option value="550">ABILENE - Texas - Copart - HOUSTON</option>
+        
+            <option value="350">ADELANTO - California - Copart - LOS ANGELES</option>
+            
+
+            <option value="2200">ADP TOWING MAUI - Hawaii - Copart - LOS ANGELES</option>
+           
+
+            <option value="325">ALBANY - New York - Copart - New York/Norfolk</option>
+            
+
+            <option value="650">ALBUQUERQUE - New Mexico - Copart - HOUSTON</option>
+            
+
+            <option value="500">ALTOONA - Pennsylvania - Copart York / Norfolk</option>
+            
+
+            <option value="575">AMARILLO - Texas - Copart - HOUSTON</option>
+           
+
+            <option value="475">ANDREWS - Texas - Copart - HOUSTON</option>
+            
+
+            <option value="450">ANTELOPE - California - Copart - LOS ANGELES</option>
+           
+
+            <option value="450">APPLETON - Wisconsin - Copart - CHICAGO</option>
+            
+
+            <option value="350">ATLANTA EAST - Georgia - Copart - SAVANNAH</option>
+           
+
+            <option value="375">ATLANTA NORTH - Georgia - Copart - SAVANNAH</option>
+           
+
+            <option value="325">ATLANTA SOUTH - Georgia - Copart - SAVANNAH</option>
+            
+
+            <option value="325">ATLANTA WEST - Georgia - Copart - SAVANNAH</option>
+         
+
+            <option value="350">Augusta - Georgia - Copart - SAVANNAH</option>
+            
+
+            <option value="325">AUSTIN - Texas - Copart - HOUSTON</option>
+            
+
+            <option value="400">BAKERSFIELD - California - LOS ANGELES - Copart</option>
+          
+
+            <option value="375">BALTIMORE - Maryland - Copart - New York / Norfolk</option>
+          
+
+            <option value="400">BALTIMORE EAST - Maryland - Copart - New York / Norfolk</option>
+      
+
+            <option value="475">BATON ROUGE - Louisiana - Copart – SAVANNAH</option>
+            
+
+            <option value="950">BILLINGS - Montana - Copart - SEATTLE</option>
+            
+
+            <option value="425">BIRMINGHAM - Alabama - Copart - SAVANNAH</option>
+          
+
+            <option value="850">BISMARCK - North Dakota - Copart - CHICAGO</option>
+         
+
+            <option value="950">BOISE - Idaho - Copart - SEATTLE</option>
+            
+
+            <option value="550">Buffalo - New York - Copart - New York / Norfolk</option>
+            
+
+            <option value="1500">CALGARY - Alberta - Copart - Toronto</option>
+            
+
+            <option value="400">CANDIA - New Hampshire - Copart - New York / Norfolk</option>
+            
+
+            <option value="350">CARTERSVILLE - Georgia - Copart - SAVANNAH</option>
+           
+
+            <option value="1300">CASPER - Wyoming - Copart – CHICAGO</option>
+           
+
+            <option value="400">CHAMBERSBURG - Pennsylvania - Copart - New York / Norfolk</option>
+           
+
+            <option value="675">CHARLESTON - West Virginia - Copart - New York / Norfolk</option>
+            
+
+            <option value="250">CHICAGO NORTH - Illinois - Copart - CHICAGO</option>
+            
+
+            <option value="250">CHICAGO SOUTH - Illinois - Copart - CHICAGO</option>
+           
+
+            <option value="250">CHICAGO SOUTH-Woodmar/Heights - Illinois - Copart - CHICAGO</option>
+           
+
+            <option value="350">CHINA GROVE - North Carolina - Copart - SAVANNAH</option>
+          
+
+            <option value="350">CICERO - Indiana - Copart - CHICAGO</option>
+           
+
+            <option value="600">CLEVELAND EAST - Ohio - Copart - New York / Norfolk</option>
+           
+
+            <option value="600">CLEVELAND WEST - Ohio - Copart - New York / Norfolk</option>
+            
+
+            <option value="700">COLORADO SPRINGS - Colorado - Copart - CHICAGO</option>
+            
+
+            <option value="600">COLUMBUS - Ohio - Copart - New York / Norfolk</option>
+            
+
+            <option value="325">SC - COLUMBIA - South Carolina - Copart - SAVANNAH</option>
+            
+
+            <option value="350">CONCORD - North Carolina - Copart - SAVANNAH</option>
+            
+
+            <option value="350">CORPUS CHRISTI - Texas - Copart - HOUSTON</option>
+            
+
+            <option value="350">CRASHEDTOYS ATLANTA - Georgia - Copart - SAVANNAH</option>
+            
+
+            <option value="300">CRASHEDTOYS DALLAS  - Texas - Copart - HOUSTON</option>
+           
+
+            <option value="550">CRASHEDTOYS EAST BETHEL - Minnesota - Copart - CHICAGO</option>
+            
+
+            <option value="425">CRASHEDTOYS ELDRIDGE - Iowa - Copart - CHICAGO</option>
+           
+
+            <option value="550">CRASHEDTOYS MINNEAPOLIS - Minnesota - Copart - CHICAGO</option>
+          
+
+            <option value="500">CRASHEDTOYS SACRAMENTO - California - Copart - LOS ANGELES</option>
+           
+
+            <option value="325">DALLAS - Texas - Copart - HOUSTON</option>
+            
+
+            <option value="325">DALLAS SOUTH - Texas - Copart - HOUSTON</option>
+           
+
+            <option value="350">DANVILLE - Virginia - Copart - New York / Norfolk</option>
+           
+
+            <option value="375">DAVENPORT - 169 Davenport sublot - Iowa - Copart - CHICAGO</option>
+           
+
+            <option value="375">DAVENPORT - Iowa - Copart - CHICAGO</option>
+           
+
+            <option value="600">DAYTON - Ohio - Copart - New York / Norfolk</option>
+         
+
+            <option value="700">DENVER - Colorado - Copart - CHICAGO</option>
+           
+
+            <option value="700">DENVER - CENTRAL - Colorado - Copart - CHICAGO</option>
+            
+
+            <option value="700">DENVER - SOUTH - Colorado - Copart - CHICAGO</option>
+            
+
+            <option value="450">DES MOINES - Iowa - Copart - CHICAGO</option>
+            
+
+            <option value="450">DETROIT - Michigan - Copart - CHICAGO</option>
+            
+
+            <option value="2950">DK TOWING KAUAI - Hawaii - Copart - LOS ANGELES</option>
+           
+
+            <option value="425">DOTHAN - Alabama - Copart - SAVANNAH</option>
+            
+
+            <option value="250">DYER  - Indiana - Copart - CHICAGO</option>
+            
+
+            <option value="525">EARLINGTON - Kentucky - Copart - CHICAGO</option>
+           
+
+            <option value="1500">EDMONTON - Alberta - Copart - TORONTO</option>
+           
+
+            <option value="475">EL PASO - Texas - Copart - HOUSTON</option>
+           
+
+            <option value="425">EUGENE - Oregon - Copart - SEATTLE</option>
+          
+
+            <option value="400">EXETER  - Rhode Island - Copart - New York / Norfolk</option>
+           
+
+            <option value="325">FAIRBURN  - Georgia - Copart - SAVANNAH</option>
+           
+
+            <option value="525">FAYETTEVILLE - Arkansas - Copart - HOUSTON</option>
+           
+
+            <option value="500">FLINT - Michigan - Copart - HOUSTON</option>
+            
+
+            <option value="350">FORT WAYNE - Indiana - Copart - HOUSTON</option>
+            
+
+            <option value="300">FREDERICKSBURG - Virginia - Copart - New York / Norfolk </option>
+            
+
+            <option value="425">FREETOWN - Massachusetts - Copart - New York / Norfolk</option>
+            
+
+            <option value="425">FRESNO - California - Copart - LOS ANGELES </option>
+            
+
+            <option value="250">FT. PIERCE - Florida - Copart - Miami</option>
+            
+
+            <option value="325">FT. WORTH - Texas - Copart - HOUSTON</option>
+           
+
+            <option value="375">GASTONIA - North Carolina - Copart - SAVANNAH</option>
+           
+
+            <option value="250">GLASSBORO EAST - New Jersey - Copart - SAVANNAH</option>
+           
+
+            <option value="250">GLASSBORO WEST - New Jersey - Copart - SAVANNAH</option>
+          
+
+            <option value="200">GRAHAM - Washington - Copart - SEATTLE</option>
+            
+
+            <option value="325">GREER - South Carolina - Copart - SAVANNAH</option>
+            
+
+            <option value="1100">HALIFAX - Nova Scotia - Copart - Toronto </option>
+            
+
+            <option value="250">HAMMOND - Indiana - Copart - CHICAGO</option>
+            
+
+            <option value="250">HAMPTON - Virginia - Copart - New York / Norfolk</option>
+           
+
+            <option value="325">HARRISBURG - Pennsylvania - Copart - New York / Norfolk</option>
+          
+
+            <option value="275">HARTFORD - Connecticut - Copart - New York / Norfolk</option>
+          
+
+            <option value="350">HARTFORD CITY - Indiana - Copart - CHICAGO</option>
+           
+
+            <option value="300">HARTFORD SPRINGFIELD - Connecticut - Copart - New York / Norfolk</option>
+            
+
+            <option value="450">HAYWARD - California - Copart - LOS ANGELES</option>
+           
+
+            <option value="800">HELENA - Montana - Copart - SEATTLE</option>
+            
+
+            <option value="250">HOUSTON - Texas - Copart - HOUSTON</option>
+            
+
+            <option value="250">HOUSTON EAST - Texas - Copart - HOUSTON</option>
+             
+
+            <option value="350">INDIANAPOLIS - Indiana - Copart - CHICAGO</option>
+          
+
+            <option value="450">IONIA - Michigan - Copart - CHICAGO</option>
+            
+
+            <option value="475">JACKSON - Mississippi - SAVANNAH</option>
+            
+
+            <option value="275">JACKSONVILLE EAST - Florida - Copart - SAVANNAH</option>
+            
+
+            <option value="275">JACKSONVILLE NORTH - Florida - Copart - SAVANNAH</option>
+            
+
+            <option value="275">JACKSONVILLE WEST - Florida - Copart - SAVANNAH</option>
+            
+
+            <option value="675">KANSAS CITY - Kansas - Copart - SAVANNAH</option>
+             
+
+            <option value="2100">KENS TOWING HILO - Hawaii - Copart - LOS ANGELES</option>
+           
+
+            <option value="800">KINCHELOE - Michigan - Copart - CHICAGO</option>
+             
+
+            <option value="450">KNOXVILLE - Tennessee - Copart - SAVANNAH</option>
+             
+
+            <option value="450">LANSING - Michigan - Copart - CHICAGO</option>
+            
+
+            <option value="375">LAS VEGAS - Nevada - Copart - LOS ANGELES</option>
+            
+
+            <option value="475">LEXINGTON EAST - Kentucky - Copart - LOS ANGELES</option>
+          
+
+            <option value="475">LEXINGTON WEST - Kentucky - Copart - LOS ANGELES</option>
+            
+
+            <option value="500">LINCOLN - Nebraska - Copart - LOS ANGELES</option>
+             
+
+            <option value="500">LITTLE ROCK - Arkansas - Copart - HOUSTON</option>
+             
+
+            <option value="350">LONDON - Ontario - Copart - Toronto</option>
+            
+
+            <option value="225">LONG BEACH - California - Copart - LOS ANGELES</option>
+            
+
+            <option value="300">LONG ISLAND - New York - Copart - New York / Norfolk</option>
+            
+
+            <option value="325">LONGVIEW - Texas - Copart - HOUSTON</option>
+            
+
+            <option value="225">LOS ANGELES - California - Copart - HOUSTON</option>
+             
+
+            <option value="475">LOUISVILLE - Kentucky - Copart - CHICAGO</option>
+             
+
+            <option value="325">LUFKIN - Texas - Copart - HOUSTON</option>
+            
+
+            <option value="350">LUMBERTON - North Carolina - Copart - SAVANNAH</option>
+             
+
+            <option value="525">LYMAN - Maine - Copart - New York / Norfolk</option>
+            
+
+            <option value="300">MACON - Georgia - Copart - SAVANNAH</option>
+             
+
+            <option value="350">MADISON - Wisconsin - Copart - CHICAGO</option>
+             
+
+            <option value="350">MADISON SOUTH - Wisconsin - Copart - CHICAGO</option>
+            
+
+            <option value="450">MARTINEZ - California - Copart - LOS ANGELES</option>
+             
+
+            <option value="400">MCALLEN - Texas - Copart - HOUSTON</option>
+           
+
+            <option value="350">MEBANE - North Carolina - Copart - SAVANNAH</option>
+             
+
+            <option value="550">MEMPHIS - Tennessee - Copart - SAVANNAH</option>
+             
+
+            <option value="550">MENTONE - California - Copart - LOS ANGELES</option>
+            
+
+            <option value="175">MIAMI CENTRAL - Florida - Copart - MIAMI</option>
+             
+
+            <option value="175">MIAMI NORTH - Florida - Copart - MIAMI</option>
+             
+
+            <option value="200">MIAMI SOUTH - Florida - Copart - MIAMI</option>
+             
+
+            <option value="275">MILWAUKEE - Stutervant sublot - Wisconsin - CHICAGO</option>
+             
+
+            <option value="275">MILWAUKEE - Waukesha sublot - Wisconsin - CHICAGO</option>
+             
+
+            <option value="275">MILWAUKEE - Wisconsin - Copart - CHICAGO</option>
+             
+
+            <option value="275">MILWAUKEE NORTH - Wisconsin - Copart - CHICAGO</option>
+             
+
+            <option value="275">MILWAUKEE SOUTH - Wisconsin - Copart - CHICAGO</option>
+             
+
+            <option value="275">MILWAUKEE- Yard 339 Milwaukee sublot - Wisconsin - CHICAGO</option>
+            
+
+            <option value="500">MINNEAPOLIS - Minnesota - Copart - CHICAGO</option>
+             
+
+            <option value="500">MINNEAPOLIS NORTH - Minnesota - Copart - CHICAGO</option>
+             
+
+            <option value="675">MO - COLUMBIA - Missouri - Copart - SAVANNAH</option>
+             
+
+            <option value="450">MOBILE - Alabama - Copart - SAVANNAH</option>
+            
+
+            <option value="450">MOBILE SOUTH - Alabama - Copart - SAVANNAH</option>
+             
+
+            <option value="350">MOCKSVILLE  - North Carolina - Copart - SAVANNAH</option>
+             
+
+            <option value="1300">MONCTON - New Brunswick - Copart - Toronto</option>
+             
+
+            <option value="450">MONTGOMERY - Alabama - Copart - SAVANNAH</option>
+            
+
+            <option value="550">MONTREAL - Quebec - Copart - SAVANNAH</option>
+            
+
+            <option value="550">N.Boston-ROWLEY Sublot - Massachusetts - New York / Norfolk</option>
+             
+
+            <option value="450">NASHVILLE - Tennessee - Copart - SAVANNAH</option>
+            
+
+            <option value="475">NEW ORLEANS - Louisiana - Copart - SAVANNAH</option>
+             
+
+            <option value="275">NEWBURGH - New York - Copart - New York / Norfolk</option>
+             
+
+            <option value="425">NORTH BOSTON - Massachusetts - Copart - New York / Norfolk</option>
+             
+
+            <option value="325">NORTH CHARLESTON - South Carolina - Copart - SAVANNAH</option>
+             
+
+            <option value="250">NORTH SEATTLE - Washington - Copart - SEATTLE</option>
+             
+
+            <option value="350">OCALA - Florida - Copart - MIAMI</option>
+            
+
+            <option value="600">OGDEN - Utah - Copart - LOS ANGELES</option>
+            
+
+            <option value="450">OKLAHOMA CITY - Oklahoma - Copart - LOS ANGELES</option>
+             
+
+            <option value="300">ORLANDO - Florida - Copart - MIAMI</option>
+             
+
+            <option value="300">ORLANDO NORTH - Florida - Copart - MIAMI</option>
+             
+
+            <option value="300">ORLANDO SOUTH - Florida - Copart - MIAMI</option>
+           
+
+            <option value="400">PASCO - Washington - Copart - SEATTLE</option>
+         
+
+            <option value="350">PEORIA - Illinois - Copart - CHICAGO</option>
+           
+
+            <option value="250">PHILADELPHIA - Pennsylvania - Copart - New York / Norfolk</option>
+          
+
+            <option value="250">PHILADELPHIA EAST - Pennsylvania - Copart - New York / Norfolk</option>
+            
+
+            <option value="400">PHOENIX - Arizona - Copart - LOS ANGELES</option>
+           
+
+            <option value="450">PITTSBURGH EAST - Pennsylvania - Copart - New York / Norfolk</option>
+           
+
+            <option value="500">PITTSBURGH NORTH - Pennsylvania - Copart - New York / Norfolk</option>
+          
+
+            <option value="500">PITTSBURGH SOUTH - Pennsylvania - Copart - New York / Norfolk</option>
+            >
+
+            <option value="500">PITTSBURGH WEST - Pennsylvania - Copart - New York / Norfolk</option>
+            
+
+            <option value="300">PORTLAND NORTH - Oregon - Copart - SEATTLE</option>
+           
+
+            <option value="350">PORTLAND SOUTH - Oregon - Copart - SEATTLE</option>
+            
+
+            <option value="275">PUNTA GORDA - Florida - Copart - Miami</option>
+           
+
+            <option value="300">PUNTA GORDA SOUTH - Florida - Copart - Miami</option>
+            
+
+            <option value="300">PUNTA GORDA SOUTH - Florida - Copart - Miami</option>
+           
+
+            <option value="350">RALEIGH - North Carolina - Copart - New York / Norfolk</option>
+            
+
+            <option value="250">RANCHO CUCAMONGA - California - Copart - LOS ANGELES</option>
+             
+
+            <option value="850">REDDING - California - Copart - LOS ANGELES</option>
+            
+
+            <option value="600">RENO - Nevada - Copart - LOS ANGELES</option>
+             
+
+            <option value="250">RICHMOND - Virginia - Copart - New York / Norfolk</option>
+            
+
+            <option value="250">RICHMOND EAST - Virginia - Copart - New York / Norfolk</option>
+             
+
+            <option value="500">ROCHESTER - New York - Copart - New York / Norfolk</option>
+             
+
+            <option value="450">SACRAMENTO - California - Copart - LOS ANGELES</option>
+            
+
+            <option value="700">SALT LAKE CITY - Utah - Copart - LOS ANGELES</option>
+            
+
+            <option value="650">SALT LAKE CITY NORTH - Utah - Copart - LOS ANGELES</option>
+             
+
+            <option value="350">SAN ANTONIO - Texas - Copart - Copart - HOUSTON</option>
+             
+
+            <option value="250">SAN BERNARDINO - California - Copart - LOS ANGELES</option>
+             
+
+            <option value="275">SAN DIEGO - California - Copart - LOS ANGELES</option>
+             
+
+            <option value="450">SAN JOSE - California - Copart - LOS ANGELES</option>
+            
+
+            <option value="175">SAVANNAH - Georgia - Copart - SAVANNAH</option>
+             
+
+            <option value="225">SAVANNAH / VERTIA SUBLOT-Georgia - Georgia  - SAVANNAH</option>
+             
+
+            <option value="325">SC - COLUMBIA - South Carolina - Copart  - SAVANNAH</option>
+             
+
+            <option value="300">SCRANTON - Pennsylvania - Copart  - New York / Norfolk</option>
+             
+
+            <option value="375">SEAFORD - Delaware - Copart  - New York / Norfolk</option>
+             
+
+            <option value="375">SHREVEPORT - Louisiana - Copart  - HOUSTON</option>
+             
+
+            <option value="525">SIKESTON - Missouri - Copart  - CHICAGO</option>
+            
+
+            <option value="450">SO SACRAMENTO - California - Copart  - LOS ANGELES</option>
+             
+
+            <option value="200">SOMERVILLE - New Jersey - Copart  - New York / Norfolk</option>
+             
+
+            <option value="425">SOUTH BOSTON - Massachusetts - Copart  - New York / Norfolk</option>
+             
+
+            <option value="650">Southern Illinois - Illinois - Copart  - SAVANNAH</option>
+             
+
+            <option value="350">SPARTANBURG - South Carolina - Copart  - SAVANNAH</option>
+             
+
+            <option value="400">SPOKANE - Washington - Copart  - SEATTLE</option>
+             
+
+            <option value="675">SPRINGFIELD - Missouri - Copart  - SAVANNAH</option>
+             
+
+            <option value="550">ST. CLOUD - Minnesota - Copart  - CHICAGO</option>
+             
+
+            <option value="1900">ST. JOHN'S - Newfoundland and Lab - Toronto</option>
+            
+
+            <option value="625">ST. LOUIS - Missouri - Copart - SAVANNAH</option>
+             
+
+            <option value="250">SUN VALLEY - California - Copart - LOS ANGELES</option>
+            
+
+            <option value="375">SYRACUSE - New York - Copart - New York / Norfolk</option>
+             
+
+            <option value="375">TALLAHASSEE - Florida - Copart - SAVANNAH</option>
+             
+
+            <option value="275">TAMPA SOUTH - Florida - Copart - MIAMI </option>
+             
+
+            <option value="325">TAMPA SOUTH - Mulberry Sublot - Florida - Copart - MIAMI</option>
+             
+
+            <option value="475">TANNER - Alabama - Copart - SAVANNAH</option>
+            
+
+            <option value="325">TIFTON - Georgia - Copart - SAVANNAH</option>
+             
+
+            <option value="300">TORONTO - Ontario - Copart - Toronto</option>
+             
+
+            <option value="2400">TOW GUYS KAMUELA - Hawaii - Copart - LOS ANGELES</option>
+             
+
+            <option value="200">TRENTON - New Jersey - Copart - New York / Norfolk
+
+            <option value="450">TUCSON - Arizona - Copart - LOS ANGELES</option>
+             
+
+            <option value="525">TULSA - Oklahoma - Copart - HOUSTON</option>
+            
+
+            <option value="450">VALLEJO - California - Copart - LOS ANGELES</option>
+             
+
+            <option value="250">VAN NUYS - California - Copart - LOS ANGELES</option>
+             
+
+            <option value="375">WACO - Texas - Copart - HOUSTON</option>
+             
+
+            <option value="475">WALTON - Kentucky - Copart - CHICAGO</option>
+             
+
+            <option value="350">WASHINGTON DC - Maryland - Copart - SAVANNAH</option>
+             
+
+            <option value="450">WEBSTER - New Hampshire - Copart - New York / Norfolk</option>
+            
+
+            <option value="225">WEST PALM BEACH - Florida - Copart - MIAMI</option>
+             
+
+            <option value="425">WEST WARREN - Massachusetts - Copart - New York / Norfolk</option>
+            
+
+            <option value="250">WHEELING - Illinois - Copart - CHICAGO</option>
+             
+
+            <option value="600">WICHITA - Kansas - Copart - HOUSTON</option>
+             
+
+            <option value="325">YORK HAVEN - Pennsylvania - Copart - New York / Norfolk</option>
+             
+        </select>
+        <!-- Площадка end -->
+<br><br>
+          <div class="block3">
+            <!-- !возраст авто -->
+            <fieldset class="f1">
+            <legend>Возраст авто</legend>
+
+             <div class='boxes'>
+            <input type="checkbox" id="checkbox1" name="vehicle1"  value="167">
+            <label for="vehicle1">Авто до 3-х лет</label><br>
+             </div>
+             <div class='boxes'>
+            <input type="checkbox" id="checkbox2" name="vehicle2"  value="250">
+            <label for="vehicle2">Авто от 3-5 лет</label><br>
+             </div>
+<div class='boxes'>
+            <input type="checkbox" id="checkbox3" name="vehicle3" value="375">
+            <label for="vehicle3">Авто более 5</label>
+</div
+<br><br>
+          </fieldset>
+          <!-- ! блок объем двигателя -->
+          <fieldset class="f2">
+            <legend for="">Выбор двигателя</legend>
+                <label for="tol">Объем двигателя см<sup>3</sup>:</label>
+              <input type="number" id="dvigatel" class="form__input2" value="2000" min="0"name='tol' >
+              <br><br>
+<div class='boxes'>
+                <input type="checkbox" id="checkbox4" name="vehicle4" >
+                <label for="vehicle4"> Электро</label>
+</div>
+
+<br>
+<div class='boxes'>
+                <input type="checkbox" id="checkbox5" name="vehicle5" >
+                <label for="vehicle5"> Гибрид</label>
+</div>
+<br>
+
+             </fieldset>
+            </div>
+          <div>
+<br>
+            
+          </div>
+        <br>
+<br>
+
+          <div>
+                <input type="checkbox" id="checkbox6" name="vehicle6" >
+                <label for="vehicle6"> Льготная растоможка</label><br>
+          </div>
+        <br>
+       
+        <br>
+        <div>     
+                <!-- поле доставка из литвы цена -->
+                
+                <input type="checkbox" id="checkbox7" name="vehicle7" >
+                <label for="vehicle7">Доставка Литва - Минск</label><br>
+        </div>
+        
+          
+          <br>
+          <br>
+
+        <button type="button" class="linkBtn" id="btnProduct">Рассчитать</button>
+    </form>
+
+    <!-- Вывод -->
+    <div id="infoProduct" class="total" >
+        <div>
+         
+        <p class="dostavka" >Доставка:<span id="dostavka"></span>$</p>
+        <p class="aukcionSbor">Аукционный сбор:<span id="auSbor"></span>$</p>
+      
+        <p class="tamozh" >Таможня:<span id="tamozh"></span>$</p>
+        <p class="util" >Утиль.сбор:<span id="util_sbor"></span>$</p> 
+        <p class="service" >Наши услуги:<span id="services"></span>$</p>
+
+        <p class="total__Price">Итого:<span id="priceProduct"></span>$</p>
+      </div>
+      <div class="lorem">
+       
+Калькулятор авто из США в Беларусь предоставляет лишь предварительную оценку стоимости, и окончательная цена может отличаться в зависимости от конкретных условий доставки и выполнения таможенных процедур. 
+Расчет стоимости авто из США может включать расходы на растаможку и уплату таможенных пошлин и сборов. Дополнительные расходы могут возникнуть в связи с покупкой автомобиля на аукционе или использованием услуг транспортной компании.
+      </div>
+    </div>
+   
+
+  </search>
+
+
+
+    <script src="js2.js"></script>
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+    <script type="text/javascript">
+   
+          $(".livesearch").chosen();
+
+    </script>
+    
+
+   
+</body>
+</html>

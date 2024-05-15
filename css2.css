@@ -1,0 +1,193 @@
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/*---calc---*/
+.main-search{
+    margin: 0 auto;
+    display: flex;
+    width: 70vw;
+    justify-content: center;
+    
+  }
+  
+  .form-calc{
+    border: 1px solid #fff;
+    border-radius: 16px;
+  /*   width: 50%; */
+    padding: 30px;
+  background-color: rgba(19, 64, 129, 1);
+  color:white;
+  }
+  label{color:white;}
+  legend{color:white;}
+  
+  .total{
+    display:block;
+    border: 1px solid black;
+    width: 50%;
+    height:60% !important;
+    margin-left: 120px;
+    padding: 30px;
+    border-radius: 16px;
+      background-color: #2D2C2C;
+    color: #fff;
+  }
+  /* стили вывода */
+  #priceProduct{
+          color: green;
+      font-size: 24px;
+      margin-left: 10px;
+      font-weight: bolder;
+      border-bottom: 2px solid #fff;
+  }
+  .total__Price{
+      font-size: 20px;
+  }
+  /*  */
+  
+  .h1-text{
+    margin-left: 280px;
+  }
+  
+  #selectAukcion {
+    width: 332px ;
+    height: 40px;
+      border-bottom:1px solid #fff;
+  }
+  #selectAukcion2{
+    width: 332px ;
+    height: 40px;
+      border-bottom:1px solid #fff;
+  }
+  
+  #selectAukcion3{
+    width: 332px ;
+    height: 40px;
+  }
+  
+  .form__input2{
+    border: none; 
+    outline: none;
+    border-bottom: 2px solid #fff !important;
+    width: 60px;
+  font-size: 24px !important;
+  }
+  
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+  }
+  
+  input[type='number'],
+  input[type="number"]:hover,
+  input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+  }
+  .f1{
+    width: 40%;
+  }
+  .f2{
+    width: 40%;
+  border-bottom:1px solid #fff !important;
+  }
+  .block3{
+    display: flex;
+    justify-content: space-between;
+  }
+  .linkBtn{
+  border-radius:16px;
+  }
+  .boxes{
+  display:flex;
+  }
+  
+  .chosen-container-single, .chosen-search {
+      position: relative;
+      z-index: 1010;
+      margin: 0;
+      padding: 3px 4px;
+      white-space: nowrap;
+      color: black !important;
+  }
+  
+  
+  .p2{
+      margin:0 auto;
+          width:70%;
+      background-color:#3d885c ;
+      height:100%;
+      text-align:center;
+      align-items: center;
+      display:flex;
+      justify-content:center;
+      border-radius:16px;
+      color:#fff;
+      font-size:20px;
+      padding:20px;
+  }
+  
+  
+  @media (max-width:600px){
+    .main-search{
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .form-calc{
+        margin: 0 auto;
+        border: 1px solid black;
+        border-radius: 16px;
+        width: 100%;
+        padding: 20px;
+        margin-top: 40px;
+    }
+  .block3 {
+    display: block;
+   
+  }
+    .total{
+        margin: 0 auto;
+        display:block;
+        border: 1px solid black;
+        width: 100%;
+        margin-left: 0px;
+        padding: 20px;
+        border-radius: 16px;
+        margin-top: 40px;
+      height:60% !important;
+    }
+    .h1-text{
+        margin: 0 auto;
+        margin-top: 50px;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+  
+    #selectAukcion {
+        margin: 0 auto;
+        width: 80% ;
+        height: 40px;
+        border: 2px solid gray;
+        border-radius: 6px;
+    }
+    #selectAukcion2{
+        width: 80% ;
+        height: 40px;
+        border: 2px solid gray;
+        border-radius: 6px;
+    }
+    #selectAukcion3{
+        width: 80% ;
+        height: 40px;
+        border: 2px solid gray;
+        border-radius: 6px;
+    
+    }
+  
+   
+  }
